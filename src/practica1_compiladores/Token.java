@@ -28,6 +28,7 @@ public class Token {
         //Negrita,
         //Subrayado,
         Palabra_reservada,
+        Conjunto,
         Asignacion,
         Porcentual,
         Concatenar,
@@ -37,6 +38,7 @@ public class Token {
         Mas,
         Grupo,
         Signo,
+        Virgulilla,
         Error
     }
     private Tipo tipoToken;
@@ -100,9 +102,13 @@ public class Token {
                 case Mas:
                     return "Mas";
                 case Grupo:
-                    return "Conjunto";
+                    return "Conj";
                 case Signo:
                     return "Signo";
+                case Virgulilla:
+                    return "Virgulilla";
+                case Conjunto:
+                    return "Conjunto";
                 default:
                     return "";
             }
